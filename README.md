@@ -1,10 +1,10 @@
-# Nuxt.js Example
+# Nuxt3 + TailwindCSS + MongoDB Example
 
-Deploy your [Nuxt.js](https://nuxtjs.org) project to Vercel with zero configuration.
+Deploy your Nuxt3 + TailwindCSS + MongoDB project to Vercel with zero configuration.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/nuxtjs&template=nuxtjs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/tanquar/nuxt-tailwind-mongo-starter)
 
-_Live Example: https://nuxtjs-template.vercel.app_
+_Live Example: https://nuxt-tailwind-mongo-starter.vercel.app/_
 
 ## Prerequisites
 
@@ -38,6 +38,3 @@ Build the application for production:
 ```bash
 yarn build
 ```
-
-
-
