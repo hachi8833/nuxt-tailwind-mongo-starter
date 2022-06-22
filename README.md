@@ -6,6 +6,15 @@ Deploy your [Nuxt.js](https://nuxtjs.org) project to Vercel with zero configurat
 
 _Live Example: https://nuxtjs-template.vercel.app_
 
+## Prerequisites
+
+Install `n` and `yarn`.
+
+```bash
+brew install n
+brew install yarn
+```
+
 ## Setup
 
 Install the dependencies:
