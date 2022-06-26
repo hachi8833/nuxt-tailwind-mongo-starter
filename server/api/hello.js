@@ -1,5 +1,5 @@
 import { useBody } from "h3";
-import { HelloModel } from "~/models/hello";
+import { HelloModel } from "~/server/models/hello";
 
 export default async (req, res) => {
   switch (req.method) {
