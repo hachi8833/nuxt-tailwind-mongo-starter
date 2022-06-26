@@ -23,6 +23,39 @@ Install the dependencies:
 yarn install
 ```
 
+## Setup MongoDB
+
+Visit [MongoDB Atlas](https://www.mongodb.com/) and create an Atlas database.
+Free tier should suffice.
+
+Define connection user, such as `staff`.
+Define connection password.
+
+Environment variables in vercel:
+
+```
+(All)
+MONGODB_URL=mongodb+srv://<user>:<password>@cluster....mongodb.net/?retryWrites=true&w=majority
+
+(Production)
+MONGODB_DBNAME=nuxt-tailwind-mongo-starter-prod
+
+(Preview)
+MONGODB_DBNAME=nuxt-tailwind-mongo-starter-prev
+
+(Development)
+MONGODB_DBNAME=nuxt-tailwind-mongo-starter-dev
+```
+
+where `<user>` is the connection user, `<password>` is the connection password.
+
+Environment variables in local `.env`:
+
+```env
+MONGODB_URL=mongodb+srv://<user>:<password>@cluster....mongodb.net/?retryWrites=true&w=majority
+MONGODB_DBNAME=nuxt-tailwind-mongo-starter-dev
+```
+
 ## Development
 
 Start the development server on http://localhost:3000:
