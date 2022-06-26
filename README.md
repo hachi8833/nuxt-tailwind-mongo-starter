@@ -56,6 +56,12 @@ MONGODB_URL=mongodb+srv://<user>:<password>@cluster....mongodb.net/?retryWrites=
 MONGODB_DBNAME=nuxt-tailwind-mongo-starter-dev
 ```
 
+## Allow IP in MongoDB Atlas
+
+If Versel generates an error `Task timed out after 10.01 seconds`,
+the Mongo DB Atlas is blocking an IP address of the Versel Server Function.
+Allow `0.0.0.0` by visiting MongoDB Atlas > Security > Network Access > Add IP Address.
+
 ## Development
 
 Start the development server on http://localhost:3000:
