@@ -1,10 +1,17 @@
 <template>
-  <div>
-    <div class="text-green-500 text-lg font-semibold px-4 py-1 bg-zinc-100">
-      This is a Nuxt3 + TailwindCSS + MongoDB example.
+  <NuxtLayout name="default-none">
+    <div class="container px-4 mx-auto my-4">
+      <h1 class="text-xl text-gray-800">
+        Welcome!
+      </h1>
+      <Button outline>Click me</Button>
+      <p>
+        Choose locale
+      </p>
+      <ul class="bullet">
+        <li><NuxtLink to="ja">ja</NuxtLink></li>
+        <li><NuxtLink to="en">en</NuxtLink></li>
+      </ul>
     </div>
-    <ul>
-      <li><a href="hello" class="text-blue-500 underline">DB test page</a></li>
-    </ul>
-  </div>
+  </NuxtLayout>
 </template>
