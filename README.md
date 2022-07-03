@@ -77,3 +77,35 @@ Build the application for production:
 ```bash
 yarn build
 ```
+
+## Amendments applied to Vercel setup of Nuxt3
+
+Updated made to package.json:
+
+```diff
+= "scripts": {
+-   "dev": "nuxi dev",
++   "dev": "nuxt dev",
+-   "build": "nuxi build",
++   "build": "nuxt build",
+...
+= "devDependencies": {
+-   "nuxt3": "latest",
++   "nuxt": "npm:nuxt3@latest",
+```
+
+Updated made to nuxt.config.ts:
+
+```diff
+- import { defineNuxtConfig } from 'nuxt3'
++ import { defineNuxtConfig } from 'nuxt'
+```
+
+Commands executed:
+
+```bash
+% rm -rf node_modules
+% rm -rf .nuxt
+% rm yarn.lock
+% yarn install
+```
