@@ -91,7 +91,7 @@ Updated made to package.json:
 ...
 = "devDependencies": {
 -   "nuxt3": "latest",
-+   "nuxt": "npm:nuxt3@latest",
++   "nuxt": "nuxt3@latest",
 ```
 
 Updated made to nuxt.config.ts:
