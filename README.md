@@ -207,21 +207,15 @@ Commands executed:
 </template>
 ```
 
-3. Create `~/pages/ja/index.vue` as a custom page using `custom-ja` layout.
+3. Create `~/pages/ja/ja.vue` that works as a skelton for all child items down this directory.
    Define the layout using `definePageMeta()` macro.
 
-~/pages/ja/index.vue:
+~/pages/ja/ja.vue:
 
 ```html
 <template>
   <div>
-    <ul>
-      <NuxtLink to="/">Top</NuxtLink>
-      &gt;
-      <NuxtLink to="/ja">Ja</NuxtLink>
-    </ul>
-    こんにちは
-    <NuxtLink to="/ja/hello">hello</NuxtLink>
+    <NuxtPage></NuxtPage>
   </div>
 </template>
 
@@ -232,8 +226,35 @@ Commands executed:
 </script>
 ```
 
-1. Within `~/pages/ja/` directory, create `hello/index.vue` as a child page using the same `custom-ja` layout.
-   Don't forget to add `definePageMeta()` macro to specify the layout on every page.
+4. Create `~/pages/ja/index.vue`.
+   This file, and all the child pages, will inherit the layout defined in `ja.vue`.
+
+~/pages/ja/index.vue:
+
+```html
+<template>
+  <div>
+    <nav>
+      <ul>
+        <NuxtLink to="/">Top</NuxtLink>
+        &gt;
+        <NuxtLink to="/ja">Ja</NuxtLink>
+      </ul>
+    </nav>
+    こんにちは
+    <ul class="mx-4 list-disc">
+      <li>
+        <NuxtLink to="/ja/hello">hello</NuxtLink>
+      </li>
+      <li>
+        <NuxtLink to="/ja/news/hello">content/hello</NuxtLink>
+      </li>
+    </ul>
+  </div>
+</template>
+```
+
+5. Within `~/pages/ja/` directory, create `hello/index.vue` as a child page using the same `custom-ja` layout.
 
 ~/pages/ja/hello/index.vue:
 
@@ -250,12 +271,6 @@ Commands executed:
     <div>Hello! こんにちは!</div>
   </div>
 </template>
-
-<script setup>
-  definePageMeta({
-    layout: "custom-ja",
-  });
-</script>
 ```
 
-5. Create `en/index.vue` and `en/hello/index.vue` in the same way.
+6. Create `en/en.vue` (skelton), `en/index.vue`, and `en/hello/index.vue` in the same way.
