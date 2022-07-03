@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="bg-blue-300">
-      Default layout
+    <div class="bg-red-300">
+      Custom Ja layout
     </div>
     <slot></slot>
   </div>

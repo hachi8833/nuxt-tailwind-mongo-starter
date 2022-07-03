@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="default-en">
+  <div>
     <div>
       <ul>
         <NuxtLink to="/">Top</NuxtLink>
@@ -8,5 +8,11 @@
       </ul>
       Hello!
     </div>
-  </NuxtLayout>
+  </div>
 </template>
+
+<script setup>
+definePageMeta({
+    layout: "custom-en",
+});
+</script>
