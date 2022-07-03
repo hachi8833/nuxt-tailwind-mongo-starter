@@ -26,16 +26,14 @@ yarn install
 ## Setup MongoDB
 
 Visit [MongoDB Atlas](https://www.mongodb.com/) and create an Atlas database.
-Free tier should suffice.
+Free tier should be sufficient for testing.
+Define a connection user and password.
 
-Define connection user, such as `staff`.
-Define connection password.
-
-Environment variables in vercel:
+Set environment variables in Vercel:
 
 ```
 (All)
-MONGODB_URL=mongodb+srv://<user>:<password>@cluster....mongodb.net/?retryWrites=true&w=majority
+MONGODB_URL=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
 
 (Production)
 MONGODB_DBNAME=nuxt-tailwind-mongo-starter-prod
@@ -47,20 +45,43 @@ MONGODB_DBNAME=nuxt-tailwind-mongo-starter-prev
 MONGODB_DBNAME=nuxt-tailwind-mongo-starter-dev
 ```
 
-where `<user>` is the connection user, `<password>` is the connection password.
+Create a local `.env` file:
 
-Environment variables in local `.env`:
-
-```env
-MONGODB_URL=mongodb+srv://<user>:<password>@cluster....mongodb.net/?retryWrites=true&w=majority
+```
+MONGODB_URL=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
 MONGODB_DBNAME=nuxt-tailwind-mongo-starter-dev
+```
+
+where `<user>` and `<password>` are the credentials you have just created in Atlas.
+
+You can also create three different clusters and assign different credentials for each environment:
+
+```
+(All)
+MONGODB_DBNAME=nuxt-tailwind-mongo-starter
+
+(Production)
+MONGODB_URL=mongodb+srv://<prod-user>:<password>@<prod-cluster>.mongodb.net/?retryWrites=true&w=majority
+
+(Preview)
+MONGODB_URL=mongodb+srv://<prev-user>:<password>@<prev-cluster>.mongodb.net/?retryWrites=true&w=majority
+
+(Development)
+MONGODB_URL=mongodb+srv://<dev-user>:<password>@<dev-cluster>.mongodb.net/?retryWrites=true&w=majority
+
+(local `.env` file)
+MONGODB_URL=mongodb+srv://<dev-user>:<password>@<dev-cluster>.mongodb.net/?retryWrites=true&w=majority
+MONGODB_DBNAME=nuxt-tailwind-mongo-starter
 ```
 
 ## Allow IP in MongoDB Atlas
 
 If Versel generates an error `Task timed out after 10.01 seconds`,
 the Mongo DB Atlas is blocking an IP address of the Versel Server Function.
-Allow `0.0.0.0` by visiting MongoDB Atlas > Security > Network Access > Add IP Address.
+You need to allow `0.0.0.0` by visiting MongoDB Atlas > Security > Network Access > Add IP Address.
+
+Note that allowing `0.0.0.0` will accept any IP address,
+so make sure that the username and password are long and complex enough.
 
 ## Development
 
