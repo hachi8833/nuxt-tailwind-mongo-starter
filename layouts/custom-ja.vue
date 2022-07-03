@@ -1,8 +1,13 @@
 <template>
   <div>
-    <div class="bg-red-300">
-      Custom Ja layout
-    </div>
-    <slot></slot>
+    <header class="bg-red-200">
+      <div>Custom Ja layout</div>
+    </header>
+    <main>
+      <slot></slot>
+    </main>
+    <footer class="bg-red-200">
+      <div>Custom Ja footer</div>
+    </footer>
   </div>
 </template>

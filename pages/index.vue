@@ -8,8 +8,8 @@
       Choose locale
     </p>
     <ul class="bullet">
-      <li><NuxtLink to="ja">ja</NuxtLink></li>
-      <li><NuxtLink to="en">en</NuxtLink></li>
+      <li><NuxtLink to="/ja">ja</NuxtLink></li>
+      <li><NuxtLink to="/en">en</NuxtLink></li>
     </ul>
   </div>
 </template>

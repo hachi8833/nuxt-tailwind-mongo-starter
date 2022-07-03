@@ -130,3 +130,132 @@ Commands executed:
 % rm yarn.lock
 % yarn install
 ```
+
+# Tips for implementation
+
+## `layouts` of Nuxt3
+
+1. Create `default.vue` and custom layouts:
+
+~/layouts/default.vue:
+
+```html
+<template>
+  <div>
+    <header class="bg-zinc-200">
+      <div>Default layout</div>
+    </header>
+    <main>
+      <slot></slot>
+    </main>
+    <footer class="bg-zinc-200">
+      <div>Default footer</div>
+    </footer>
+  </div>
+</template>
+```
+
+~/layouts/custom-ja.vue:
+
+```html
+<template>
+  <div>
+    <header class="bg-red-200">
+      <div>Custom Ja layout</div>
+    </header>
+    <main>
+      <slot></slot>
+    </main>
+    <footer class="bg-red-200">
+      <div>Custom Ja footer</div>
+    </footer>
+  </div>
+</template>
+```
+
+~/layouts/custom-en.vue:
+
+```html
+<template>
+  <div>
+    <header class="bg-blue-300">
+      <div>Custom En layout</div>
+    </header>
+    <main>
+      <slot></slot>
+    </main>
+    <footer>
+      <div>Custom En footer</div>
+    </footer>
+  </div>
+</template>
+```
+
+2. Create `~/pages/index.vue` as the entry point with `default` layout.
+   ~/pages/index.vue:
+
+```html
+<template>
+  <div>
+    <h1>Welcome!</h1>
+    <p>Choose locale</p>
+    <ul>
+      <li><NuxtLink to="/ja">ja</NuxtLink></li>
+      <li><NuxtLink to="/en">en</NuxtLink></li>
+    </ul>
+  </div>
+</template>
+```
+
+3. Create `~/pages/ja/index.vue` as a custom page using `custom-ja` layout.
+   Define the layout using `definePageMeta()` macro.
+
+~/pages/ja/index.vue:
+
+```html
+<template>
+  <div>
+    <ul>
+      <NuxtLink to="/">Top</NuxtLink>
+      &gt;
+      <NuxtLink to="/ja">Ja</NuxtLink>
+    </ul>
+    こんにちは
+    <NuxtLink to="/ja/hello">hello</NuxtLink>
+  </div>
+</template>
+
+<script setup>
+  definePageMeta({
+    layout: "custom-ja",
+  });
+</script>
+```
+
+1. Within `~/pages/ja/` directory, create `hello/index.vue` as a child page using the same `custom-ja` layout.
+   Don't forget to add `definePageMeta()` macro to specify the layout on every page.
+
+~/pages/ja/hello/index.vue:
+
+```html
+<template>
+  <div>
+    <ul>
+      <NuxtLink to="/">Top</NuxtLink>
+      &gt;
+      <NuxtLink to="/ja">Ja</NuxtLink>
+      &gt;
+      <NuxtLink to="/ja/hello">Hello</NuxtLink>
+    </ul>
+    <div>Hello! こんにちは!</div>
+  </div>
+</template>
+
+<script setup>
+  definePageMeta({
+    layout: "custom-ja",
+  });
+</script>
+```
+
+5. Create `en/index.vue` and `en/hello/index.vue` in the same way.
