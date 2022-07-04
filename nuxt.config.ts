@@ -15,6 +15,13 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@intlify/nuxt3',
   ],
+  intlify: {
+    localeDir: 'locales',
+    vueI18n: {
+      locale: 'ja',
+    }
+  }
 })

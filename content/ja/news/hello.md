@@ -1,3 +1,3 @@
-# Hello Content
+# こんにちは、内容
 
-Here is a simple example.
+これは単純な例です。

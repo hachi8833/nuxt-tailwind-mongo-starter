@@ -89,7 +89,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n();
-locale.value = 'ja';
+locale.value = 'en';
 
 const greetings = ref([]);
 
@@ -151,18 +151,18 @@ function remove(id) {
 }
 </script>
 
-<i18n locale="ja">
+<i18n locale="en">
 {
-  "top": "トップ",
-  "locale home": "言語ホーム",
-  "hello posts": "Hello投稿板",
-  "hello": "こんにちは!",
+  "top": "Top",
+  "locale home": "Locale Home",
+  "hello posts": "Hello Posts",
+  "hello": "Hello!",
   "ID": "ID",
-  "Created": "作成",
-  "Updated": "更新",
-  "Say hello:": "何か書き込んでください:",
-  "Update": "更新",
-  "Delete": "削除",
-  "Add": "追加",
+  "Created": "Created",
+  "Updated": "Updated",
+  "Say hello:": "Say Hello:",
+  "Update": "Update",
+  "Delete": "Delete",
+  "Add": "Add",
 }
 </i18n>

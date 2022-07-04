@@ -1,0 +1,5 @@
+{
+  "hello": "Hello",
+  "welcome to name": "Welcome to {name}!",
+  "you are nth visitor": "You are {nth}th visitor."
+}
