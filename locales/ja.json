@@ -1,0 +1,5 @@
+{
+  "hello": "こんにちは",
+  "welcome to name": "{name}へようこそ!",
+  "you are nth visitor": "あなたは{nth}番目の訪問者です。"
+}
