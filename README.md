@@ -81,7 +81,7 @@ the Mongo DB Atlas is blocking an IP address of the Versel Server Function.
 You need to allow `0.0.0.0` by visiting MongoDB Atlas > Security > Network Access > Add IP Address.
 
 Note that allowing `0.0.0.0` will accept any IP address,
-so make sure that the username and password are long and complex enough.
+so make sure that the username and password are long enough and complex enough.
 
 ## Development
 
@@ -101,7 +101,7 @@ yarn build
 
 ## Amendments applied to Vercel setup of Nuxt3
 
-Updated made to package.json:
+Updates made to the Vercel version of package.json:
 
 ```diff
 = "scripts": {
@@ -115,7 +115,7 @@ Updated made to package.json:
 +   "nuxt": "nuxt3@latest",
 ```
 
-Updated made to nuxt.config.ts:
+Updates made to the Vercel version of nuxt.config.ts:
 
 ```diff
 - import { defineNuxtConfig } from 'nuxt3'
@@ -130,6 +130,8 @@ Commands executed:
 % rm yarn.lock
 % yarn install
 ```
+
+After applying the above changes, the `layouts` of Nuxt3 will function correctly as explained below.
 
 # Tips for implementation
 
