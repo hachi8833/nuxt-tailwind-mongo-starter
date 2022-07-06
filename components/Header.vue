@@ -1,8 +1,12 @@
 <template>
-  <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
-    <header class="flex justify-between items-center py-4 md:py-8">
+  <header class="border-b mb-8">
+    <div class="max-w-screen-2xl flex justify-between items-center px-4 md:px-8 mx-auto">
+
       <PLogo/>
+
       <PNav/>
-    </header>
-  </div>
+
+      <PButtons/>
+    </div>
+  </header>
 </template>

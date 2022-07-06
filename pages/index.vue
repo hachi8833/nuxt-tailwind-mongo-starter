@@ -1,3 +1,13 @@
 <template>
-  <SMenu/>
+
+  <SHero/>
+
+  <SProduct/>
+
+  <SCallToAction/>
+
+  <SCollection/>
+
+  <SNewsLetter/>
+
 </template>
