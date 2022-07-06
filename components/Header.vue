@@ -7,5 +7,7 @@
       <PNav/>
 
     </div>
+
+    <PSearch/>
   </header>
 </template>
