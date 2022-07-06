@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <header class="bg-zinc-200">
-      <div>Default layout</div>
-    </header>
+  <div class="bg-white lg:pb-12">
+    <Header/>
+
     <main>
-      <slot></slot>
+      <slot />
     </main>
-    <footer class="bg-zinc-200">
-      <div>Default footer</div>
-    </footer>
+
+    <Footer/>
   </div>
 </template>
