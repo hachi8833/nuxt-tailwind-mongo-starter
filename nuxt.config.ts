@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     localeDir: 'locales',
     vueI18n: {
       locale: 'ja',
+      fallbackLocale: [ 'ja', 'en' ],
     }
   }
 })

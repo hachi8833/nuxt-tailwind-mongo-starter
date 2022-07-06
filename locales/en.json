@@ -1,5 +1,4 @@
 {
-  "hello": "Hello",
-  "welcome to name": "Welcome to {name}!",
-  "you are nth visitor": "You are {nth}th visitor."
+  "hello from global file": "Hello from common locale file!",
+  "Change global locale": "Change global locale"
 }
