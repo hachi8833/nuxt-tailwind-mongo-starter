@@ -6,7 +6,6 @@
 
       <PNav/>
 
-      <PButtons/>
     </div>
   </header>
 </template>
