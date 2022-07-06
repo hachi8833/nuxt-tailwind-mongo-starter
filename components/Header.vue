@@ -1,5 +1,5 @@
 <template>
-  <header class="border-b mb-8">
+  <header class="border-b mb-8 sticky top-0 bg-white">
     <div class="max-w-screen-2xl flex justify-between items-center px-4 md:px-8 mx-auto">
 
       <PLogo/>

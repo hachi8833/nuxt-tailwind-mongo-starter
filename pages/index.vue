@@ -1,6 +1,6 @@
 <template>
 
-  <SHero/>
+  <SCarousel/>
 
   <SProduct/>
 

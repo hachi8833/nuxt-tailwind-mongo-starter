@@ -14,7 +14,7 @@
       <span class="relative">お問い合わせ</span>
     </a>
 
-      <a href="#_" class="px-8 mx-5 py-2 relative rounded group text-white font-bold inline-block">
+    <a href="#_" class="px-8 mx-5 py-2 relative rounded group text-white font-bold inline-block">
       <span class="absolute inset-0 w-full transition duration-200 ease-out rounded bg-gradient-to-br to-purple-600 from-blue-500"></span>
       <span class="relative">お見積り</span>
     </a>
