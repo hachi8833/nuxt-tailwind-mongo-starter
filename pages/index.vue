@@ -2,12 +2,12 @@
 
   <SCarousel/>
 
-  <SProduct/>
+  <SWhatsNew/>
 
-  <SCallToAction/>
 
-  <SCollection/>
+  <SOwnedMedia/>
 
-  <SNewsLetter/>
+  <!-- <SCallToAction/> -->
+  <!-- <SNewsLetter/> -->
 
 </template>

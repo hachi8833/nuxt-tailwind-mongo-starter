@@ -7,16 +7,12 @@
         <!-- logo - start -->
         <div class="lg:-mt-2 mb-4">
           <a href="/" class="inline-flex items-center text-black-800 text-xl md:text-2xl font-bold gap-2" aria-label="logo">
-            <svg width="95" height="94" viewBox="0 0 95 94" class="w-5 h-auto text-indigo-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-            </svg>
-
-            Flowrift
+            <PLogo/>
           </a>
         </div>
         <!-- logo - end -->
 
-        <p class="text-gray-500 sm:pr-8 mb-6">Filler text is dummy text which has no meaning however looks very similar to real text.</p>
+        <!-- <p class="text-gray-500 sm:pr-8 mb-6">Filler text is dummy text which has no meaning however looks very similar to real text.</p> -->
 
         <!-- social - start -->
         <div class="flex gap-4">
