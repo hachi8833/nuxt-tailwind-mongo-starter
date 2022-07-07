@@ -4,10 +4,6 @@
 
   <SWhatsNew/>
 
-
   <SOwnedMedia/>
-
-  <!-- <SCallToAction/> -->
-  <!-- <SNewsLetter/> -->
 
 </template>
