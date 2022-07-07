@@ -11,7 +11,7 @@
       <div class="md:pt-8">
         <h2 class="text-gray-800 text-2xl sm:text-3xl font-bold text-center md:text-left mb-4 md:mb-6">オウンドメディア</h2>
 
-        <h3 class="text-gray-800 text-xl sm:text-2xl font-semibold text-center md:text-left mb-2 md:mb-4">storate_logo</h3>
+        <h3 class="text-gray-800 text-xl sm:text-2xl font-semibold text-center md:text-left mb-2 md:mb-4">【storate_logo】</h3>
 
         <p class="text-gray-500 sm:text-lg mb-6 md:mb-8">
           翻訳、海外リサーチ、海外向けマーケティング、インバウンドやアウトバウンドの担当者の皆様を対象に、役立つ「戦略」や「方策」をご提案するウェブメディアです。
