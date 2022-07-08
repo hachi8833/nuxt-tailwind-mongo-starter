@@ -1,6 +1,4 @@
 <template>
-  <h1 class="text-gray-800 text-2xl sm:text-3xl font-bold text-center mb-4 md:mb-6">翻訳サービス</h1>
-
   <section class="max-w-screen-2xl bg-gray-100 px-4 md:px-8 mx-auto">
 
     <h2 class=" text-black-800 text-xl sm:text-2xl md:text-3xl font-bold mt-4 md:mb-8"
