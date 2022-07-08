@@ -1,6 +1,6 @@
 <template>
     <section class="max-w-screen-2xl bg-gray-100 px-4 md:px-8 mx-auto flex flex-wrap">
-    <h2 class=" text-black-800 text-xl sm:text-2xl md:text-3xl font-bold mt-4 md:mb-8"
+    <h2 class="text-black-800 text-xl sm:text-2xl md:text-3xl font-bold mt-4 md:mb-8"
     >翻訳サービス</h2>
     <div class=" w-full lg:w-1/3 flex flex-col justify-center lg:pt-48 lg:pb-24 mb-6 sm:mb-12 lg:mb-0 ">
       <div class="container mx-auto flex flex-wrap">
